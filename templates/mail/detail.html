@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://www.douban.com/doumail/ -->
+<html lang="zh-cmn-Hans" class="ua-windows ua-webkit">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./我的豆邮_files/get_token_with_ts" async=""></script><script src="./我的豆邮_files/get_token_with_ts(1)" async=""></script><script src="./我的豆邮_files/get_token_with_ts(2)" async=""></script><script src="./我的豆邮_files/num" async=""></script><script src="./我的豆邮_files/num(1)" async=""></script>
+
+    <meta name="renderer" content="webkit">
+    <meta name="referrer" content="always">
+    <meta name="google-site-verification" content="ok0wCgT20tBBgo9_zat2iAcimtN4Ftf5ccsh092Xeyw">
+    <title>站内信</title>
+
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+
+    <script type="text/javascript" defer="" async="" src="/static/js/piwik.js.下载"></script><script async="" src="/static/js/gtm.js.下载"></script><script>var _head_start = new Date();</script>
+    <script src="/static/js/jquery.min.js.下载"></script>
+    <script src="/static/js/douban.js.下载"></script>
+    <link href="/static/css/douban.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+    </style>
+
+    <link rel="stylesheet" href="/static/css/370eef4c4fe8314a.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+{#    <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico" type="image/x-icon">#}
+    <script src="/static/js/ga.js.下载" async="true"></script>
+</head>
+<body>
+    <div class='navbar'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <ul class='nav pull-right'>
+            <li><a href='/topic'>首页</a></li>
+
+            <li><a href='/profile'>个人主页</a></li>
+            <li><a href='/setting'>设置</a></li>
+            <li><a href='/mail'>站内信</a></li>
+            <li><a href='/'>注册</a></li>
+            <li><a href='/'>登录</a></li>
+            <li><a href="/">密码找回</a></li>
+
+          </ul>
+          <a class="btn btn-navbar" id="responsive-sidebar-trigger">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="wrapper">
+        <div id="content">
+            <h1>信箱</h1>
+            <div class="grid-16-8 clearfix">
+                <div class="article">
+                  <div class="doumail-toolbar">
+                      <div class="tabs">
+                        <a href="/mail" class="on">信箱</a>
+                      </div>
+                  </div>
+                  <form id="doumail-form" method="post"><div style="display:none;"><input type="hidden" name="ck" value="6Ved"></div>
+                     <input type="hidden" value="0" name="start">
+                     <div class="doumail-list">
+                       <ul>
+                         <li class="over">
+                           <div class="pic">
+                                <a href="{{ url_for('index.user_detail', id=sender.id) }}">
+                                  <img src="{{ sender.image }}" title="{{ sender.username }}">
+                                    <span class="user-verify-icon-1-small"></span>
+                                </a>
+                           </div>
+
+                           <div class="title">
+                             <div class="sender">
+                               <span class="time">{{ message.created_time | format_time }}</span>
+                               <span class="from">{{ message.title }}</span>
+                             </div>
+                             {{ message.content }}
+                           </div>
+
+{#                           <div class="select">#}
+{#                             <input type="checkbox" name="mc_95805238" value="95805238">#}
+{#                           </div>#}
+
+                           <div class="operations">
+                             <a title="将删除整个对话, 是否确定?" href="{{ url_for('mail.delete', id=message.id, token=token) }}">删除</a>
+                           </div>
+                         </li>
+                       </ul>
+{#                       <div class="doumail-list-ft">#}
+{#                           <span class="button-group">#}
+{#                             <input name="mc_delete" type="submit" value="删除" data-confirm="将删除整个对话, 是否确定?">#}
+{#                           </span>#}
+{#                           <input name="checkall" type="checkbox">#}
+{#                       </div>#}
+                     </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="/static/js/52cedce0690230c9.js.下载"></script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5WP579" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5WP579');</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript">
+var _paq = _paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript';
+    g.defer=true;
+    g.async=true;
+    g.src=p+'://img3.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+})();
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7019765-1']);
+_gaq.push(['_setCampNameKey', 'dcn']);
+_gaq.push(['_setCampSourceKey', 'dcs']);
+_gaq.push(['_setCampMediumKey', 'dcm']);
+_gaq.push(['_setCampTermKey', 'dct']);
+_gaq.push(['_setCampContentKey', 'dcc']);
+_gaq.push(['_addOrganic', 'baidu', 'word']);
+_gaq.push(['_addOrganic', 'soso', 'w']);
+_gaq.push(['_addOrganic', '3721', 'name']);
+_gaq.push(['_addOrganic', 'youdao', 'q']);
+_gaq.push(['_addOrganic', 'so.360.cn', 'q']);
+_gaq.push(['_addOrganic', 'vnet', 'kw']);
+_gaq.push(['_addOrganic', 'sogou', 'query']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣']);
+_gaq.push(['_addIgnoredOrganic', 'douban']);
+_gaq.push(['_addIgnoredOrganic', '豆瓣网']);
+_gaq.push(['_addIgnoredOrganic', 'www.douban.com']);
+_gaq.push(['_setDomainName', '.douban.com']);
+
+
+    _gaq.push(['_setCustomVar', 1, 'responsive_view_mode', 'desktop', 3]);
+
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+    _gaq.push(['_setVar', '15771']);
+
+window._ga_init = function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+};
+if (window.addEventListener) {
+    window.addEventListener('load', _ga_init, false);
+} else {
+    window.attachEvent('onload', _ga_init);
+}
+</script>
+
+</body>
+</html>
