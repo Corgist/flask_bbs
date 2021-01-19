@@ -34,10 +34,6 @@ def current_user():
 
 
 def login_required(route_function):
-    """
-    这个函数看起来非常绕，所以你不懂也没关系
-    就直接拿来复制粘贴就好了
-    """
     @wraps(route_function)
     def f(*args, **kwargs):
         log('login_required')
@@ -48,7 +44,6 @@ def login_required(route_function):
         else:
             log('登录用户', route_function)
             return route_function(*args, **kwargs)
-
     return f
 
 
